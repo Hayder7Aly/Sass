@@ -1,0 +1,340 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../Poppins/Poppins-Light.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 140rem;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr;
+      grid-template-columns: 2fr 4fr;
+  gap: 0 2rem;
+  padding: 5rem 3%;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
+@media (max-width: 767px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 2rem;
+  }
+}
+
+.container .sidebar {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+}
+
+.container .sidebar .imgBx {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../jeans.jpg");
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .container .sidebar .imgBx {
+    height: 30rem;
+  }
+}
+
+.container .sidebar .imgBx h1 {
+  margin: 0 0 1rem 2rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.container .sidebar .skills_about {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sidebar .skills_about .about {
+  border-bottom: .1rem solid #999;
+}
+
+.container .sidebar .skills_about .about p {
+  font-size: 1.4rem;
+  color: #888;
+  font-weight: 550;
+  padding: .9rem;
+  font-weight: 600;
+}
+
+.container .sidebar .skills_about .skills {
+  padding: 1rem;
+}
+
+.container .sidebar .skills_about .skills h1 {
+  color: #999;
+  font-size: 2rem;
+}
+
+.container .sidebar .skills_about .skills .skill {
+  margin: 1rem 0;
+}
+
+.container .sidebar .skills_about .skills .skill p {
+  font-size: 1.4rem;
+  color: #999;
+  font-weight: 550;
+}
+
+.container .sidebar .skills_about .skills .skill .percent {
+  position: relative;
+  margin: 2rem 0;
+  width: 100%;
+  height: 2rem;
+  background-color: #eee;
+  border-radius: 5rem;
+}
+
+.container .sidebar .skills_about .skills .skill .percent::before {
+  content: '80%';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #009688;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container .sidebar .skills_about .languages {
+  padding: 1rem;
+}
+
+.container .sidebar .skills_about .languages h1 {
+  font-size: 1.8rem;
+  color: #999;
+}
+
+.container .sidebar .skills_about .languages .div {
+  margin: 2rem 0;
+}
+
+.container .sidebar .skills_about .languages .div p {
+  font-size: 1.4rem;
+  color: #999;
+  font-weight: 600;
+}
+
+.container .sidebar .skills_about .languages .div .percent {
+  position: relative;
+  margin: 1rem 0;
+  width: 100%;
+  height: 2rem;
+  background-color: #eee;
+  border-radius: 5rem;
+}
+
+.container .sidebar .skills_about .languages .div .percent::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #009688;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container .main .experience {
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.container .main .experience .heading {
+  font-size: 2.5rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.container .main .experience .experinece-talk {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #dfdddd;
+}
+
+.container .main .experience .experinece-talk .about-exp {
+  font-size: 1.5rem;
+  font-weight: 590;
+  color: #777;
+  font-weight: 600;
+}
+
+.container .main .experience .experinece-talk .from {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  color: #009688;
+  font-weight: 600;
+}
+
+.container .main .experience .experinece-talk .from .current {
+  padding: .5rem 1rem;
+  background-color: #009688;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.container .main .experience .experinece-talk .para {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.container .main .working {
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #dfd9d9;
+  padding-bottom: 2rem;
+}
+
+.container .main .working .heading {
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.container .main .working .about-work {
+  margin-top: 2rem;
+}
+
+.container .main .working .about-work .from {
+  color: #009688;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.container .main .working .about-work .para {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.container .main .designing {
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid #dfd9d9;
+  padding-bottom: 2rem;
+}
+
+.container .main .designing .heading {
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.container .main .designing .design-work {
+  margin-top: 2rem;
+}
+
+.container .main .designing .design-work .from {
+  color: #009688;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.container .main .designing .design-work .para {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.container .education {
+  background-color: #fff;
+  padding: 3rem;
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.container .education .heading {
+  font-size: 2.5rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.container .education .child {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: .1rem solid #e2e1e1;
+}
+
+.container .education .child h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #999;
+}
+
+.container .education .child .green {
+  padding-left: 1rem;
+  color: #009688;
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.container .education .child p {
+  font-size: 1.5rem;
+  color: #999;
+  font-weight: 550;
+}
+/*# sourceMappingURL=main.css.map */

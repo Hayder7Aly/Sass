@@ -1,0 +1,67 @@
+@import "mixin";
+@import  "var";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+//  1. operators
+
+// 2. variables
+
+// 3. nesting
+
+// 4. mixin
+
+// 5. parametters
+
+// 6. partials
+
+
+
+.headermain{
+    width: 100vw;
+    height: 100vh;
+    @include flexprob;
+    background-color: $bg-color;
+
+
+    h1{
+
+        @include commoncode(.6rem , uppercase);
+
+
+        &:hover{
+            color: #c8d6e5;
+        }
+
+        &::after{
+            content: "Haider";
+        }
+        
+    }
+
+ 
+    p{
+
+        @include commoncode(.3rem , capitalize);
+
+
+        &:hover{
+            color: #c8d6e5;
+    
+        }
+    }
+
+
+}
+
